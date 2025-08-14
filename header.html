@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đá Bình Định</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header PC================================================================================================================== -->
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +84 123 456 789</span>
+                <span><i class="fas fa-envelope"></i> info@datunhienviet.com</span>
+                <span><i class="fas fa-clock"></i> T2-T7: 8:00-18:00</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><img src="./assest/zalo.png" style="width: 20px; height: 20;"/></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>Đá Tự Nhiên Việt</span>
+            </a>
+
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fas fa-search"></i>
+
+            </div>
+            <div class="header-actions">
+                <a href="#" class="action-btn">
+                    <i class="fas fa-heart"></i>
+                    <span>Yêu thích</span>
+                </a>
+                <a href="#" class="action-btn">
+                    <i class="fas fa-user"></i>
+                    <span>Tài khoản</span>
+                </a>
+
+                <a href="tel:+84123456789" class="action-btn consult-btn">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Tư vấn ngay</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <!-- Header Mobile + Tablet================================================================================================================== -->
+    <header class="main-headermobile">
+        <div class="menu" onclick="toggleOffcanvasMenu()">
+            <i class="fas fa-bars"></i>
+            <span>MENU</span>
+        </div>
+
+        <div class="logo-mobile">
+            <i class="fas fa-gem"></i>
+            <span>Hoàng Minh Stone</span>
+        </div>
+        <div class="right-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
+ <!-- Offcanvas menu -->
+<div class="offcanvas_menu_wrapper" id="mobileMenu">
+    <div class="offcanvas_header">
+        <span>Danh mục</span>
+        <i class="fas fa-times" onclick="toggleOffcanvasMenu()"></i>
+    </div>
+    <ul class="offcanvas_nav">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Đá Granite</a></li>
+        <li><a href="#">Đá Bazan</a></li>
+        <li><a href="#">Dịch vụ</a></li>
+        <li><a href="#">Dự án</a></li>
+        <li><a href="#">Tin tức</a></li>
+        <li><a href="#">Về chúng tôi</a></li>
+        <li><a href="#">Liên hệ</a></li>
+    </ul>
+</div>
+
+<!-- Overlay -->
+<div class="offcanvas_overlay" id="offcanvasOverlay" onclick="toggleOffcanvasMenu()"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-bar" id="navBar">
+        <div class="container">
+            <ul class="main-nav">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Trang chủ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Đá Granite <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Granite Đen</a>
+                        <a href="#">Granite Trắng</a>
+                        <a href="#">Granite Xám</a>
+                        <a href="#">Granite Đỏ</a>
+                        <a href="#">Granite Vàng</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Đá Bazan <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Bazan Đen</a>
+                        <a href="#">Bazan Xanh</a>
+                        <a href="#">Bazan Nâu</a>
+                        <a href="#">Bazan Gia Lai</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Dịch vụ <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Gia công theo yêu cầu</a>
+                        <a href="#">Thi công lắp đặt</a>
+                        <a href="#">Vận chuyển</a>
+                        <a href="#">Bảo hành</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Dự án</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tin tức</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Về chúng tôi</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Liên hệ</a>
+                </li>
+            </ul>
+            <!-- Nút search -->
+            <div class="search-wrapper">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- section -->
+    <div id="section"></div>
+    <script>
+        function loadHTML(id, file) {
+            fetch(file)
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        loadHTML("section", "section.html");
+
+    </script>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
